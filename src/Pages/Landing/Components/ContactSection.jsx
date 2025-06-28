@@ -15,7 +15,7 @@ const ContactSection = () => {
             <div className="contact-details">
               <div className="contact-item">
                 <span className="contact-icon">📧</span>
-                <span>hello@nexium.com</span>
+                <span>contacto@gruponexium.com</span>
               </div>
               <div className="contact-item">
                 <span className="contact-icon">📞</span>
@@ -30,18 +30,18 @@ const ContactSection = () => {
           <div className="contact-form">
             <form>
               <div className="form-group">
-                <input type="text" placeholder="Your Name" required />
+                <input type="text" placeholder="Nombre" required />
               </div>
               <div className="form-group">
-                <input type="email" placeholder="Your Email" required />
+                <input type="email" placeholder="Email" required />
               </div>
               <div className="form-group">
-                <input type="text" placeholder="Subject" required />
+                <input type="text" placeholder="Titulo" required />
               </div>
               <div className="form-group">
-                <textarea placeholder="Your Message" rows={5} required></textarea>
+                <textarea placeholder="Tu Mensaje" rows={5} required></textarea>
               </div>
-              <button type="submit" className="btn-primary">Send Message</button>
+              <button type="submit" className="btn-primary">Enviar Mensaje</button>
             </form>
           </div>
         </div>
