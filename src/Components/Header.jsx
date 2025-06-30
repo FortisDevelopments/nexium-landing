@@ -1,5 +1,5 @@
 import "./header.css";
-import Logo from "../assets/images/Logo.png";
+import Logo from "../assets/images/nexiumlogo.png"; // Adjust the path as necessary
 
 const Header = () => {
   return (
