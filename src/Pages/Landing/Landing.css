@@ -15,13 +15,15 @@
 
 /* Hero Section */
 .hero-section {
-  min-height: 96dvh;
+  min-height: 55dvh;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background: linear-gradient(130deg,rgba(15, 10, 8, 1) 5%, rgba(61, 56, 56, 1) 54%, rgba(125, 120, 120, 1) 91%); */
-  background: #0F0A08;
+  background: url('../../assets//images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: white;
   padding: 2rem 0;
   margin: 0;
@@ -354,6 +356,14 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .hero-section {
+    left: 0;
+    right: 0;
+    margin-left: 0;
+    margin-right: 0;
+
+  }
+  
   .hero-section .hero-container {
     grid-template-columns: 1fr;
     text-align: center;

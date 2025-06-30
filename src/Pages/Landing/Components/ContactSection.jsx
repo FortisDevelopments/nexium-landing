@@ -1,6 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const ContactSection = () => {
+  useEffect(() => {
+    // Load TidyCal embed script
+    const script = document.createElement('script');
+    script.src = 'https://asset-tidycal.b-cdn.net/js/embed.js';
+    script.async = true;
+    document.head.appendChild(script);
+
+    // Cleanup function to remove script when component unmounts
+    return () => {
+      const existingScript = document.querySelector('script[src="https://asset-tidycal.b-cdn.net/js/embed.js"]');
+      if (existingScript) {
+        document.head.removeChild(existingScript);
+      }
+    };
+  }, []);
   return (
     <section className="contact-section">
       <div className="container">
@@ -28,21 +43,7 @@ const ContactSection = () => {
             </div>
           </div>
           <div className="contact-form">
-            <form>
-              <div className="form-group">
-                <input type="text" placeholder="Nombre" required />
-              </div>
-              <div className="form-group">
-                <input type="email" placeholder="Email" required />
-              </div>
-              <div className="form-group">
-                <input type="text" placeholder="Titulo" required />
-              </div>
-              <div className="form-group">
-                <textarea placeholder="Tu Mensaje" rows={5} required></textarea>
-              </div>
-              <button type="submit" className="btn-primary">Enviar Mensaje</button>
-            </form>
+            <div className="tidycal-embed" data-path="megatron111994/15-minute-meeting"></div>
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
-import React from 'react';
-import Logo from '../../../assets/images/Logo.png';
+import React from "react";
+import Logo from "../../../assets/images/logo.png"; // Adjust the path as necessary
 
 const HeroSection = () => {
   return (
@@ -8,7 +8,8 @@ const HeroSection = () => {
         <div className="hero-content">
           <h1 className="hero-title">Grupo NEXIUM</h1>
           <p className="hero-subtitle">
-            Transforming ideas into digital excellence with cutting-edge solutions
+            Transforming ideas into digital excellence with cutting-edge
+            solutions
           </p>
           <div className="hero-buttons">
             <button className="btn-primary">Agenda una cita</button>
