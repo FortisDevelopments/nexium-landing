@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../../assets/images/logo.png"; // Adjust the path as necessary
+import logo from "../../../assets/images/logo.png"; // Adjust the path as necessary
 
 const HeroSection = () => {
   return (
@@ -18,7 +18,7 @@ const HeroSection = () => {
         </div>
         <div className="hero-image">
           <div className="hero-placeholder">
-            <img src={Logo} alt="Nexium Logo" className="hero-logo" />
+            <img src={logo} alt="Nexium Logo" className="hero-logo" />
           </div>
         </div>
       </div>
