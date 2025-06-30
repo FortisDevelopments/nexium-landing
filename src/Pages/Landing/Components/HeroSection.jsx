@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../../assets/images/logo.png"; // Adjust the path as necessary
+import logo from "../../../assets/images/nexiumlogo.png"; // Adjust the path as necessary
 
 const HeroSection = () => {
   return (
