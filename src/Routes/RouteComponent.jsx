@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import React from 'react';
 import Landing from '../Pages/Landing/Landing';
-
+import Booking from '../Pages/Booking/Booking';
 // Example page components - you can replace these with your actual pages
 
 const NotFound = () => (
@@ -21,6 +21,7 @@ const RouteComponent= () => {
         <Route path="/404" element={<NotFound />} />
         {/* Redirect any unknown routes to 404 */}
         <Route path="*" element={<Navigate to="/404" replace />} />
+        <Route path="/citas" element={<Booking />} />
       </Routes>
     </BrowserRouter>
   );
