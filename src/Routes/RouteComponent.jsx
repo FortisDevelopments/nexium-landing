@@ -11,13 +11,21 @@ const NotFound = () => (
   </div>
 );
 
+const UnderConstruction = () => (
+  <div style={{ padding: '2rem' }}>
+    <h1>Bajo Construccion</h1>
+    <p>Esta pagina esta bajo Construccion</p>
+  </div>
+);
+
 
 const RouteComponent= () => {
   return (
     <BrowserRouter>
       {/* <Navigation /> */}
       <Routes>
-        <Route path="/" element={<Landing />} />
+        <Route path="/" element={<UnderConstruction />} />
+        <Route path="/landing" element={<Landing />} />
         <Route path="/404" element={<NotFound />} />
         {/* Redirect any unknown routes to 404 */}
         <Route path="*" element={<Navigate to="/404" replace />} />
