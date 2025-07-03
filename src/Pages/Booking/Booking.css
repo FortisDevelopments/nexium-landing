@@ -14,3 +14,17 @@
     color: #333;
 }
 
+.calendar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.tidycal-embed {
+    width: 100%;
+    max-width: 800px;
+    min-height: 600px;
+}
+
