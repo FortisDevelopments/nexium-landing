@@ -2,19 +2,37 @@ import React, { useEffect } from 'react';
 
 const ContactSection = () => {
   useEffect(() => {
-    // Load TidyCal embed script
-    const script = document.createElement('script');
-    script.src = 'https://asset-tidycal.b-cdn.net/js/embed.js';
-    script.async = true;
-    document.head.appendChild(script);
-
-    // Cleanup function to remove script when component unmounts
-    return () => {
+    const loadTidyCal = () => {
+      // Check if TidyCal script is already loaded
       const existingScript = document.querySelector('script[src="https://asset-tidycal.b-cdn.net/js/embed.js"]');
-      if (existingScript) {
-        document.head.removeChild(existingScript);
+      
+      const initializeTidyCal = () => {
+        // Find the TidyCal embed element
+        const tidycalElement = document.querySelector('.tidycal-embed[data-path="megatron111994/15-minute-meeting"]');
+        if (tidycalElement && window.TidyCal) {
+          // Initialize TidyCal with the specific element
+          window.TidyCal.init(tidycalElement);
+        }
+      };
+      
+      if (!existingScript) {
+        // Load the script if it doesn't exist
+        const script = document.createElement('script');
+        script.src = 'https://asset-tidycal.b-cdn.net/js/embed.js';
+        script.async = true;
+        script.onload = () => {
+          // Small delay to ensure DOM is ready
+          setTimeout(initializeTidyCal, 50);
+        };
+        document.head.appendChild(script);
+      } else {
+        // Script already exists, just reinitialize TidyCal
+        setTimeout(initializeTidyCal, 50);
       }
     };
+
+    // Small delay to ensure component is fully mounted
+    setTimeout(loadTidyCal, 10);
   }, []);
   return (
     <section className="contact-section">

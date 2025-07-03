@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   const handleHomeClick = () => {
-    navigate("/");
+    navigate("/landing");
   };
 
   return (
