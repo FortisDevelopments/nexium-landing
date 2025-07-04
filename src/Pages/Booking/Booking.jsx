@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Booking.css";
 import Header from "../../Components/Header";
+import logo from "../../assets/images/nexiumlogo.png" // Adjust the path as necessary
 
 const Booking = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -62,14 +63,14 @@ const Booking = () => {
           <div className={`loader-overlay ${isFadingOut ? 'fade-out' : ''}`}>
             <div className="loader-content">
               <img 
-                src="/src/assets/images/nexiumlogo.png" 
+                src={logo}
                 alt="Nexium Logo" 
                 className="loader-logo"
               />
             </div>
           </div>
         )}
-        <h1 className="booking-title">Agenda una Cita con nosotros</h1>
+        <h1 className="booking-title">Agenda una Cita con nosotros!</h1>
         <div className="calendar-container">
           <div className="tidycal-embed" data-path="megatron111994/15-minute-meeting"></div>
         </div>
