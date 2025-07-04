@@ -55,6 +55,7 @@
   margin: 0;
   padding: 0;
   gap: 2rem;
+  cursor: pointer;
 }
 
 .nav-links li {
@@ -105,6 +106,7 @@
   transition: all 0.3s ease;
   box-shadow: 0 2px 8px rgba(100, 108, 255, 0.3);
   white-space: nowrap;
+  font-family: 'Organetto Condensed', sans-serif;
 }
 
 .quote-button:hover {

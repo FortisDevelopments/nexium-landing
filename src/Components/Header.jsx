@@ -22,13 +22,13 @@ const Header = () => {
         </div>
         <nav className="navigation">
           <ul className="nav-links">
-            <li>
+            <li style={{ fontFamily: 'Organetto' }}>
               <a onClick={handleHomeClick} style={{ cursor: 'pointer' }}>Home</a>
             </li>
-            <li>
+            <li style={{ fontFamily: 'Organetto Condensed' }}>
               <a>Servicios</a>
             </li>
-            <li>
+            <li style={{ fontFamily: 'Organetto Expanded' }}>
               <a>Sobre Nosotros</a>
             </li>
             {/* <li>

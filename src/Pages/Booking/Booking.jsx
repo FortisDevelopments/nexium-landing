@@ -1,9 +1,21 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Booking.css";
 import Header from "../../Components/Header";
 
 const Booking = () => {
+  const [isLoading, setIsLoading] = useState(true);
+  const [isFadingOut, setIsFadingOut] = useState(false);
   useEffect(() => {
+    // Start fade out after 0.5 seconds
+    const fadeTimeout = setTimeout(() => {
+      setIsFadingOut(true);
+      
+      // Hide loader completely after fade animation completes
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 500); // Wait for the 0.5s CSS transition to complete
+    }, 500);
+
     const loadTidyCal = () => {
       // Check if TidyCal script is already loaded
       const existingScript = document.querySelector('script[src="https://asset-tidycal.b-cdn.net/js/embed.js"]');
@@ -35,12 +47,28 @@ const Booking = () => {
 
     // Small delay to ensure component is fully mounted
     setTimeout(loadTidyCal, 10);
+
+    // Cleanup timeouts on unmount
+    return () => {
+      clearTimeout(fadeTimeout);
+    };
   }, []);
 
   return (
     <>
       <Header />
       <div className="booking-page">
+        {isLoading && (
+          <div className={`loader-overlay ${isFadingOut ? 'fade-out' : ''}`}>
+            <div className="loader-content">
+              <img 
+                src="/src/assets/images/nexiumlogo.png" 
+                alt="Nexium Logo" 
+                className="loader-logo"
+              />
+            </div>
+          </div>
+        )}
         <h1 className="booking-title">Agenda una Cita con nosotros</h1>
         <div className="calendar-container">
           <div className="tidycal-embed" data-path="megatron111994/15-minute-meeting"></div>

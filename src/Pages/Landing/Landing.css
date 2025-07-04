@@ -55,6 +55,7 @@
   font-weight: 700;
   margin-bottom: 1rem;
   line-height: 1.2;
+  font-family: 'Organetto Expanded';
 }
 
 .hero-subtitle {
@@ -109,6 +110,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: fadeInDown 1s ease-out;
 }
 
 .hero-logo {
@@ -338,6 +340,17 @@
   from {
     opacity: 0;
     transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
   }
   to {
     opacity: 1;

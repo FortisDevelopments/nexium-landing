@@ -4,6 +4,7 @@
     width: 80vw;
     overflow-y: auto;
     margin-top: 1vw;
+    position: relative;
 }
 
 .booking-title {
@@ -26,5 +27,43 @@
     width: 100%;
     max-width: 800px;
     min-height: 600px;
+}
+
+/* Loader styles */
+.loader-overlay {
+    position: fixed;
+    top: 76px; /* Desktop header height offset */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .loader-overlay {
+        top: 67px; /* Mobile header height offset */
+    }
+}
+
+.loader-overlay.fade-out {
+    opacity: 0;
+}
+
+.loader-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader-logo {
+    width: 200px;
+    height: auto;
 }
 

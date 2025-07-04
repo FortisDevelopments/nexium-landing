@@ -1,0 +1,79 @@
+/* Organetto Font Family */
+@font-face {
+  font-family: 'Organetto';
+  src: url('./Organetto/Fontspring-DEMO-organetto-thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Organetto';
+  src: url('./Organetto/Fontspring-DEMO-organetto-ultralight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Organetto';
+  src: url('./Organetto/Fontspring-DEMO-organetto-light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Organetto';
+  src: url('./Organetto/Fontspring-DEMO-organetto-regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Organetto';
+  src: url('./Organetto/Fontspring-DEMO-organetto-bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Organetto Condensed */
+@font-face {
+  font-family: 'Organetto Condensed';
+  src: url('./Organetto/Fontspring-DEMO-organetto-cndthin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Organetto Condensed';
+  src: url('./Organetto/Fontspring-DEMO-organetto-cndlight.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Organetto Condensed';
+  src: url('./Organetto/Fontspring-DEMO-organetto-cndregular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Organetto Condensed';
+  src: url('./Organetto/Fontspring-DEMO-organetto-cndbold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Organetto Expanded */
+@font-face {
+  font-family: 'Organetto Expanded';
+  src: url('./Organetto/Fontspring-DEMO-organetto-expregular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Organetto Expanded';
+  src: url('./Organetto/Fontspring-DEMO-organetto-expbold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
