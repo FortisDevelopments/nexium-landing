@@ -1,7 +1,9 @@
 import React from "react";
 import logo from "../../../assets/images/nexiumlogo.png"; // Adjust the path as necessary
-
+import { useNavigate } from "react-router";
 const HeroSection = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="hero-section">
       <div className="hero-container">
@@ -12,7 +14,12 @@ const HeroSection = () => {
             solutions
           </p>
           <div className="hero-buttons">
-            <button className="btn-primary">Agenda una cita</button>
+            <button
+              className="btn-primary"
+              onClick={() => navigate("/citas")}
+            >
+              Agenda una cita
+            </button>
             <button className="btn-secondary">Sobre Nosotros</button>
           </div>
         </div>
