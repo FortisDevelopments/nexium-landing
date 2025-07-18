@@ -1,4 +1,5 @@
 import React from "react";
+import nexiumLogoNoText from "../../../assets/images/nexiumlogonotext.png";
 
 const AboutSection = () => {
   return (
@@ -6,43 +7,58 @@ const AboutSection = () => {
       <div className="container">
         {/* <h2 className="section-title">Sobre Nosotros</h2> */}
         <div className="about-box">
-          <h2 className="section-title">Sobre Nosotros</h2>
+          <h2 className="section-title">¿Quiénes somos?</h2>
           <div className="about-content">
-            <div className="about-text">
-              <p>
-                Grupo NEXIUM nace como una respuesta innovadora ante el vacío
-                legal, fiscal y financiero que enfrentan los usuarios de
-                criptomonedas e inversiones alternativas en México. No existía
-                hasta ahora una firma que integrara en un mismo ecosistema:
-              </p>
-              <p>
-                NEXIUM representa luz, conocimiento y especialización,
-                proyectando equilibrio entre cumplimiento normativo,
-                accesibilidad para el usuario y soluciones prácticas de alto
-                nivel profesional.
-              </p>
+            <div className="about-left-column">
+              <div className="about-text">
+                <p>
+                  Grupo NEXIUM nace como una firma pionera que integra el mundo
+                  legal, fiscal y financiero con las nuevas tecnologías
+                  descentralizadas.
+                </p>
+                <p>
+                  Atendemos tanto a personas que operan con criptomonedas como a
+                  empresas que buscan integrar criptoactivos en sus operaciones
+                  tradicionales: tokenización, pagos con cripto, estructuras
+                  legales híbridas o defensa fiscal estratégica.
+                </p>
+                <p>
+                  Somos el puente entre el sistema tradicional y el
+                  descentralizado. Diseñamos soluciones legales, fiscales y
+                  tecnológicas para quienes <b>usan, invierten o construyen con
+                    criptomonedas.</b>
+                </p>
+              </div>
+              <div className="about-logo">
+                <img 
+                  src={nexiumLogoNoText} 
+                  alt="Nexium Logo" 
+                  className="nexium-logo-about"
+                />
+              </div>
             </div>
             <div className="about-stats">
-              <h2 className="stats-title">Nuestras Metas</h2>
+              {/* <h2 className="stats-title">Nuestras Metas</h2> */}
               <div className="stat">
                 <h3>Ofrecer</h3>
                 <p>
-                  alternativas financieras innovadoras, accesibles, pero
-                  reguladas.
+                  Alternativas legales y financieras para operar con
+                  criptomonedas de forma segura, regulada y funcional.
                 </p>
               </div>
               <div className="stat">
                 <h3>Facilitar</h3>
                 <p>
-                  el uso responsable de criptoactivos a través de herramientas
-                  legales y tecnológicas.
+                  La transición entre el sistema tradicional y el
+                  descentralizado mediante estructuras legales, fiscales y
+                  tecnológicas viables.
                 </p>
               </div>
               <div className="stat">
                 <h3>Formar</h3>
                 <p>
-                   una comunidad educada y protegida ante riesgos legales
-                  o fiscales.
+                  Una comunidad informada y protegida que entienda los riesgos
+                  legales, fiscales y de lavado de dinero al usar criptoactivos.
                 </p>
               </div>
             </div>

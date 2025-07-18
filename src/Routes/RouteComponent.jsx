@@ -12,7 +12,7 @@ const NotFound = () => (
 );
 
 const UnderConstruction = () => (
-  <div style={{ padding: '2rem' }}>
+  <div style={{ padding: '2rem', color: 'white' }}>
     <h1>Bajo Construccion</h1>
     <p>Esta pagina esta bajo Construccion</p>
   </div>

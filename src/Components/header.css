@@ -70,6 +70,7 @@
   border-radius: 6px;
   transition: all 0.3s ease;
   position: relative;
+  font-family: 'Organetto Condensed', sans-serif;
 }
 
 .nav-links a:hover {

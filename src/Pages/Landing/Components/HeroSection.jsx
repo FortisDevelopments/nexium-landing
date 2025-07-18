@@ -9,10 +9,10 @@ const HeroSection = () => {
       <div className="hero-container">
         <div className="hero-content">
           <h1 className="hero-title">Grupo NEXIUM</h1>
-          <p className="hero-subtitle">
+          {/* <p className="hero-subtitle">
             Transforming ideas into digital excellence with cutting-edge
             solutions
-          </p>
+          </p> */}
           <div className="hero-buttons">
             <button
               className="btn-primary"
