@@ -21,8 +21,8 @@ const ServicesSection = () => {
         }
       },
       {
-        threshold: 0.2, // Trigger when 20% of the component is visible
-        rootMargin: '-50px 0px -50px 0px' // Add some margin for better timing
+        threshold: 0.1, // Trigger when 10% of the component is visible
+        rootMargin: '0px 0px 0px 0px' // Remove negative margins for better visibility
       }
     );
 

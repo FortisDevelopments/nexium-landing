@@ -69,9 +69,9 @@ const Header = () => {
                 Exchange OTC
               </a>
             </li>
-            <li>
+            {/* <li>
               <a>Blog Recursos</a>
-            </li>
+            </li> */}
           </ul>
           <button className="quote-button" onClick={handleQuoteClick}>
             Agenda una Cita
