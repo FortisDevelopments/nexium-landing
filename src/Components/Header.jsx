@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   const handleHomeClick = () => {
-    navigate("/landing");
+    navigate("/");
   };
 
   const scrollToSection = (sectionClass) => {

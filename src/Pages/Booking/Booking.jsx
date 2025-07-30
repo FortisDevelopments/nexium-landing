@@ -23,7 +23,7 @@ const Booking = () => {
       
       const initializeTidyCal = () => {
         // Find the TidyCal embed element
-        const tidycalElement = document.querySelector('.tidycal-embed[data-path="megatron111994/15-minute-meeting"]');
+        const tidycalElement = document.querySelector('.tidycal-embed[data-path="grupo-nexium/asesoria"]');
         if (tidycalElement && window.TidyCal) {
           // Initialize TidyCal with the specific element
           window.TidyCal.init(tidycalElement);
@@ -70,9 +70,9 @@ const Booking = () => {
             </div>
           </div>
         )}
-        <h1 className="booking-title">Agenda una Cita con nosotros!</h1>
+        <h3 className="booking-title">Agenda una Cita con nosotros</h3>
         <div className="calendar-container">
-          <div className="tidycal-embed" data-path="megatron111994/15-minute-meeting"></div>
+          <div className="tidycal-embed" data-path="grupo-nexium/asesoria"></div>
         </div>
       </div>
     </>

@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const ContactSection = () => {
+  const navigate = useNavigate();
+  
   useEffect(() => {
     const loadTidyCal = () => {
       // Check if TidyCal script is already loaded
@@ -45,29 +48,17 @@ const ContactSection = () => {
         <div className="contact-content">
           <div className="contact-info">
             <h3>Agenda una cita con un experto Nexium hoy mismo</h3>
-            {/* <p>
-              Ready to bring your ideas to life? We'd love to hear about your
-              project and discuss how we can help you achieve your goals.
-            </p> */}
-            {/* <div className="contact-details">
-              <div className="contact-item">
-                <span className="contact-icon">📧</span>
-                <span>contacto@gruponexium.com</span>
-              </div>
-              <div className="contact-item">
-                <span className="contact-icon">📞</span>
-                <span>+1 (555) 123-4567</span>
-              </div>
-              <div className="contact-item">
-                <span className="contact-icon">📍</span>
-                <span>123 Innovation Street, Tech City, TC 12345</span>
-              </div>
-            </div> */}
+            <button 
+              className="contact-cta-button"
+              onClick={() => navigate('/citas')}
+            >
+              Agenda una Cita
+            </button>
           </div>
           <div className="contact-form">
             <div
               className="tidycal-embed"
-              data-path="megatron111994/15-minute-meeting"
+              data-path="grupo-nexium/asesoria"
             ></div>
           </div>
         </div>

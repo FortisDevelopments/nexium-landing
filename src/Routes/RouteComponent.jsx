@@ -24,8 +24,8 @@ const RouteComponent= () => {
     <BrowserRouter>
       {/* <Navigation /> */}
       <Routes>
-        <Route path="/" element={<UnderConstruction />} />
-        <Route path="/landing" element={<Landing />} />
+        {/* <Route path="/" element={<UnderConstruction />} /> */}
+        <Route path="/" element={<Landing />} />
         <Route path="/404" element={<NotFound />} />
         {/* Redirect any unknown routes to 404 */}
         <Route path="*" element={<Navigate to="/404" replace />} />
